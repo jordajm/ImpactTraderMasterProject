@@ -1,0 +1,502 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Justified Nav Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- Custom styles for this template -->
+    <link href="justified-nav.css" rel="stylesheet">
+           <!-- Custom styles for this template -->
+    <link href="css/sticky-footer.css" rel="stylesheet" />
+      <!-- JQUERY -->
+    <script src="js/jquery.js"></script>
+  <!-- JQUERY END-->
+   <!-- JS-->
+    <script src="js/bootstrap.js"></script>
+  <!-- JS END-->
+   
+  <!-- COLLAPSIBLE DIV SCRIPT -->
+        
+      <script type="text/javascript">
+          jQuery(document).ready(function () {
+              jQuery(".eggs").hide();
+              //toggle the componenet with class msg_body
+              jQuery(".scrambled").click(function () {
+                  jQuery(this).next(".eggs").slideToggle(500);
+              });
+          });
+       </script>
+
+  <!-- END COLLAPSIBLE DIV SCRIPT -->
+
+
+      <style>
+          td {
+            width:33%;
+              
+          }
+          th {
+              
+              
+          }
+          table {
+              text-align: left;
+   
+          }
+          a {
+              cursor: pointer;
+          }
+          .navbar {
+                position: static;
+          }
+          hr {
+              height: 2px;
+              background-color: #428bca;
+          }
+          
+
+      </style>
+
+  </head>
+
+
+
+
+  <body>
+
+   
+<!-- LOGO -->
+<div class="row" style="margin-top:15px">
+<div class="container">
+    <div class="col-xs-12 col-sm-5 col-md-6">
+            <img class="img-responsive" src="img/impact_trader_logo.png" />
+                <p><strong>An end-to-end Impact Investing solution for Financial Advisors</strong></p>
+            </div>
+
+            <div class="col-md-6 col-sm-7 col-xs-12">
+                <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <label class="sr-only" for="">Search</label>
+                    <input type="" class="form-control" id="" placeholder="Search">
+                  </div>
+                  <div class="btn-group">
+                      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Select <span class="caret"></span>
+                      </button>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Offerings</a></li>
+                        <li><a href="#">Clients</a></li>
+                        <li><a href="#">Transactions</a></li>
+                      </ul>
+                    </div>
+                  <button type="submit" class="btn btn-default">Search</button>
+                </form>
+            </div>
+    </div>
+</div>
+ 
+ <!-- LOGO END -->
+ 
+    <div class="container">
+
+       <!-- NAVBAR -->
+        <nav class="navbar navbar-default" role="navigation">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+  </div>
+  <div class="collapse navbar-collapse navbar-ex1-collapse">
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">Impact Offerings</a></li>
+      <li><a href="#">Clients</a></li>
+      <li><a href="#">Transactions</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Legal</a></li>
+      <li><a href="#">Logout</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+</div>
+
+        <!-- NAVBAR END -->
+
+        
+     
+
+
+        <!-- BEGIN REVIEW DATA -->
+<div class="container">
+    <div class="row">
+        <div class="alert alert-danger">
+        <p><strong>Please Confirm All Client Info ::</strong>&nbsp Please update any client data that may have changed since your last database update. All changes will be saved to our database.</p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            <ul class="nav nav-tabs">
+              <li class="active"><a href="#home" data-toggle="tab">Bill Smith</a></li>
+              <li><a href="#profile" data-toggle="tab">Susan Jones</a></li>
+              <li><a href="#messages" data-toggle="tab">Sam Blank</a></li>
+              <li><a href="#settings" data-toggle="tab">Rajeev Ahuja</a></li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <button type="button" class="btn btn-success pull-right">Complete Order(s)</button>
+            <button type="button" class="btn btn-default pull-right" style="margin-right:10px">Go Back</button>
+        </div>
+    </div>
+</div>    
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-9 col-sm-6 col-xs-12">
+            <h2>Client Data - Bill Smith</h2>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Name</strong></td>
+                        <td>Bill Avery Smith</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text1" placeholder="New First Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text2" placeholder="New Middle Name">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text4" placeholder="New Last Name">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>  
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Address</strong></td>
+                        <td>123 Main St. New York, NY 43434</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text17" placeholder="New Street Address">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text18" placeholder="New City">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text19" placeholder="New State">
+                  </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text20" placeholder="New Zip">
+                  </div>
+                  <div class="form-group">
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button>
+                  </div>
+                  </div>
+            </form>
+    </div>
+  </div>
+</div>   
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Email</strong></td>
+                        <td>Bill@synergy.com</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text7" placeholder="New Email">
+                  </div>
+                  <div class="btn-group">
+                  <button type="button" class="btn btn-primary pull-right">Save</button>
+                  </div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Primary Phone</strong></td>
+                        <td>(484) 383-3939</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text8" placeholder="New Phone">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Date of Birth</strong></td>
+                        <td>05-09-1963</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text3" placeholder="New Date of Birth">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>SSN or EIN</strong></td>
+                        <td>XXX-XX-5432</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text5" placeholder="New SSN or EIN">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Employer</strong></td>
+                        <td>Profitable, Inc.</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text6" placeholder="New Employer">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Employment Status</strong></td>
+                        <td>Employed</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text9" placeholder="New Employment Status">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Liquid Net Worth</strong></td>
+                        <td>$1.8MM</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text10" placeholder="New Liquid Net Worth">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Annual Income</strong></td>
+                        <td>$270,000</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text11" placeholder="New Annual Income">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Income Tax Bracket</strong></td>
+                        <td>35%</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text12" placeholder="New Tax Bracket">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+<div class="container">
+    <div class="row"> 
+        <div class="scrambled col-xs-12 col-sm-12 col-md-12 col-lg-12">         
+             <table class="table table-hover table-responsive table-condensed">
+                <tbody>
+                    <tr>
+                        <td><strong>Investment Knowledge / Experience</strong></td>
+                        <td>Intermediate</td>
+                        <td><a>Edit</a></td>                                   
+                    </tr>
+                 </tbody>
+            </table>
+        </div>
+    <div class="eggs col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <form class="form-inline pull-right" role="form">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="Text13" placeholder="New Investment Knowledge">
+                  </div>
+                  <div class="btn-group"><button type="button" class="btn btn-primary pull-right">Save</button></div>
+            </form>
+    </div>
+  </div>
+</div>
+      <br />
+      <br />
+
+
+      <!-- END REVIEW DATA -->
+
+     
+
+      <!-- Site footer -->
+      <div id="footer" style="margin-top:50px;margin-bottom:25px">
+      <div class="container">
+        <p class="muted-text credit">All securities offered through <a>Hexagon Securities, LLC &nbsp</a>| Member <a>FINRA/SIPC</a></p>
+        <p class="text-muted credit"> <a style="margin-right:25px">Broker Dealer Responsibilities</a>
+            <a style="margin-right:40px"> Risks of Investing in Securities</a>
+            <a style="margin-right:40px"> About</a>
+            <a style="margin-right:40px"> Legal</a>
+        </p>
+      </div>
+    </div>
+    </div> 
+</div>
+</div><!-- /container -->
+
+
+
+
+  </body>
+
+
+
+
+
+</html>
