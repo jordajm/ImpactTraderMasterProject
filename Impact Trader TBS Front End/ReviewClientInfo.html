@@ -11,6 +11,8 @@
 
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.css" rel="stylesheet" />
+    <!-- Glyphicons --> 
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="justified-nav.css" rel="stylesheet">
            <!-- Custom styles for this template -->
@@ -75,12 +77,12 @@
 <!-- LOGO -->
 <div class="row" style="margin-top:15px">
 <div class="container">
-    <div class="col-xs-12 col-sm-5 col-md-6">
+    <div class="col-xs-12 col-sm-5 col-md-5">
             <img class="img-responsive" src="img/impact_trader_logo.png" />
                 <p><strong>An end-to-end Impact Investing solution for Financial Advisors</strong></p>
             </div>
 
-            <div class="col-md-6 col-sm-7 col-xs-12">
+            <div class="col-md-7 col-sm-7 col-xs-12">
                 <form class="form-inline pull-right" role="form">
                   <div class="form-group">
                     <label class="sr-only" for="">Search</label>
@@ -98,6 +100,33 @@
                     </div>
                   <button type="submit" class="btn btn-default">Search</button>
                 </form>
+            </div>
+            <div class="col-md-7 col-sm-7 col-xs-12" style="margin-top:15px">    
+                <div class="panel panel-default">
+                  <div class="panel-body" style="padding-bottom:5px;padding-top:0px">
+                      <div class="row">
+                          <div class="col-xs-3 col-sm-3 col-md-3">
+                              <p class="pull-right">Choose Offerings</p><span class="glyphicon glyphicon-shopping-cart pull-right" style="margin-right:2px"></span>
+                          </div>
+                          <div class="col-xs-3 col-sm-3 col-md-3">
+                              <p class="pull-right" >Review Client Info</p><span class="glyphicon glyphicon-pencil pull-right" style="margin-right:2px"></span>
+                          </div>
+                          <div class="col-xs-3 col-sm-3 col-md-3">
+                              <p class="pull-right">Confirm Order</p><span class="glyphicon glyphicon-list pull-right" style="margin-right:2px"></span>
+                          </div>
+                          <div class="col-xs-3 col-sm-3 col-md-3">
+                              <p class="pull-right">Get eSignatures</p><span class="glyphicon glyphicon-envelope pull-right" style="margin-right:2px"></span>
+                          </div> 
+                      </div>
+                      <div class="row" style="padding-right:10px;padding-left:10px">
+                            <div class="progress progress-striped" style="margin-bottom:0px">
+                              <div class="progress-bar progress-bar-primary" style="width: 40%">
+                                <span class="sr-only">50% Complete</span>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
             </div>
     </div>
 </div>
@@ -118,10 +147,10 @@
   </div>
   <div class="collapse navbar-collapse navbar-ex1-collapse">
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Impact Offerings</a></li>
+      <li><a href="AdvisorHome.html">Home</a></li>
+      <li><a href="Offerings.html">Impact Offerings</a></li>
       <li><a href="#">Clients</a></li>
-      <li class="active"><a href="#">Transactions&nbsp<span class="badge pull-right" style="background-color:#428bca">(4) Pending</span></a></li>
+      <li class="active"><a href="Transactions.html">Transactions&nbsp<span class="badge pull-right" style="background-color:#428bca">(4) Pending</span></a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
       <li><a href="#">About</a></li>
@@ -159,7 +188,7 @@
         </div>
         <div class="col-xs-12 col-sm-4">
             <button type="button" class="btn btn-success pull-right">Complete Order(s)</button>
-            <button type="button" class="btn btn-default pull-right" style="margin-right:10px">Go Back</button>
+            <a class="btn btn-large btn-default pull-right" href="RequiredInfo.html" style="margin-right:10px">Go Back</a>
         </div>
     </div>
 </div>    
